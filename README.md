@@ -10,6 +10,10 @@ The project focuses on preventive governance rather than deploying application w
 
 ## Architecture
 
+![AWS Secure Multi-Account Architecture](architecture/aws-secure-multi-account-architecture.png)
+
+The architecture establishes an organization-level governance boundary using AWS Organizations and Service Control Policies. Security operations and centralized audit logging are separated from workload accounts, while IAM Identity Center provides centralized identity governance and SCPs enforce preventive controls across Production, Development, and Sandbox OUs.
+
 The organization is structured around separate accounts for:
 
 - Management
